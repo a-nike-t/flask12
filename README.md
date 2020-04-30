@@ -1,5 +1,5 @@
 # flask12
-##DECSRIPTION-
+## DECSRIPTION-
 This is the basic flask app use to create, read, update and delete the user info,
 Flask is a basic web framework that provides tools, libraries and technologies that allow you to build a web application.
 The dependencies of flask are->
@@ -17,7 +17,7 @@ The dependencies of flask are->
 >WTForms
 
 
-##BASIC STRUCTURE
+## BASIC STRUCTURE
 
 >F:.
 >│   run.py   // the main file that contain the instance of the create_app that is to be run
