@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %} <!-- continude from layout-->
+    <div>
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset>
+                <legend>sign up</legend>
+                <div> <!-- this division tag conatins form for username field -->
+                    {{ form.username.label() }} <!-- label to add extra classes-->
+
+                    {% if form.username.errors %}
+                        {{ form.username() }}
+                        <div>
+                            {% for error in form.username.errors %}<!-- for loop for errors in the username field -->
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username() }}
+                    {% endif %}
+                </div>
+                <div><!-- this division tag conatins form for email field -->
+                    {{ form.email.label() }}  <!-- label to add extra classes-->
+                    {% if form.email.errors %}
+                        {{ form.email() }}
+                        <div>
+                            {% for error in form.email.errors %}<!-- for loop for errors in the email field -->
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email() }}
+                    {% endif %}
+                </div>
+                <div><!-- this division tag conatins form for password field -->
+                    {{ form.password.label() }}  <!-- label to add extra classes-->
+                    {% if form.password.errors %}
+                        {{ form.password() }}
+                        <div>
+                            {% for error in form.password.errors %}<!-- for loop for errors in the password field -->
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password() }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+    </div>
+    <div>
+        <small>
+            <a href="{{ url_for('users.login') }}">Sign In</a> <!-- redirection if the user want to login instead -->
+        </small>
+    </div>
+{% endblock content %}
