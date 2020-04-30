@@ -50,7 +50,7 @@ The dependencies of flask are->
 
 The basic structure contains f module that has two modules main and user,  
 The advantage of using this type of structure is that any other functionality can be added by creating different module  
-And it is to debug as well as to read and more features  
+And it is easy to debug as well as to read and more features  
 For eg- if we want to add other forms for the user, we will simply use user module for that,  
 Now if we want to add pictures of different user and maintain a database for it then we will create a new module for that and functionality into it,  
  
