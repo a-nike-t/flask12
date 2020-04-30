@@ -53,6 +53,7 @@ The advantage of using this type of structure is that any other functionality ca
 And it is to debug as well as to read and more features  
 For eg- if we want to add other forms for the user, we will simply use user module for that,  
 Now if we want to add pictures of different user and maintain a database for it then we will create a new module for that and functionality into it,  
-
-
+ 
+## How to run
+just run the run.py file
 
